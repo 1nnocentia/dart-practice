@@ -17,7 +17,7 @@ void main () {
   stdout.write("Enter your age: ");
   int age = int.parse(stdin.readLineSync()!);
   // Create Data object and calculate years to 100
-  Data data = Data(name!, age!);
+  Data data = Data(name, age);
   int yearsToHundred = 100 - data.age;
   print("Hello ${data.name}, you have $yearsToHundred years to be 100 years old.");
 }
